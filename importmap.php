@@ -18,8 +18,7 @@ return [
         'path' => 'app.js',
         'preload' => true,
     ],
-    'lodash' => [
-        'downloaded_to' => 'vendor/lodash.js',
-        'url' => 'https://cdn.jsdelivr.net/npm/lodash@4.17.21/+esm',
+    'lodash/camelCase' => [
+        'url' => 'https://cdn.jsdelivr.net/npm/lodash@4.17.21/camelCase/+esm',
     ],
 ];
