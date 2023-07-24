@@ -19,6 +19,13 @@ return [
         'preload' => true,
     ],
     'lodash/camelCase' => [
+        'downloaded_to' => 'vendor/lodash/camelCase.js',
         'url' => 'https://cdn.jsdelivr.net/npm/lodash@4.17.21/camelCase/+esm',
+    ],
+    '@hotwired/stimulus' => [
+        'url' => 'https://cdn.jsdelivr.net/npm/@hotwired/stimulus@3.2.1/+esm',
+    ],
+    '@symfony/stimulus-bundle' => [
+        'path' => '@symfony/stimulus-bundle/loader.js',
     ],
 ];
