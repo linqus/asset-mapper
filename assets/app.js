@@ -4,4 +4,7 @@
  * This file will be included onto the page via the importmap() Twig function,
  * which should already be in your base.html.twig.
  */
-console.log('This log comes from assets/app.js - welcome to AssetMapper! 🎉')
+import Vinyl from './lib/vinyl.js';
+
+const mix = new Vinyl('Awesome Mix Vol. 1', 2014);
+console.log(mix.describe());
