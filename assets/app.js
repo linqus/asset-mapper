@@ -5,6 +5,7 @@
  * which should already be in your base.html.twig.
  */
 import Vinyl from './lib/vinyl.js';
+import _ from 'lodash';
 
 const mix = new Vinyl('Awesome Mix Vol. 1', 2014);
-console.log(mix.describe());
+console.log(_.camelCase(mix.describe()));
