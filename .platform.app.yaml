@@ -15,6 +15,10 @@ runtime:
         - iconv
         - pdo_pgsql
         
+relationships:
+    # automatic variable exposed:
+    # DATABASE_URL=
+    database: 'database:postgresql'
 
 #variables:
 #    php:
