@@ -2,6 +2,10 @@ name: app
 
 type: php:8.2
 
+dependencies:
+    php:
+        composer/composer: "^2"
+
 runtime:
     extensions:
         - apcu
@@ -9,6 +13,7 @@ runtime:
         - sodium
         - ctype
         - iconv
+        - pdo_pgsql
         
 
 #variables:
