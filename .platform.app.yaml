@@ -62,7 +62,7 @@ hooks:
 
         php bin/console asset-map:compile
 
-        php bin/console doctrine:fixtures:load
+        php bin/console doctrine:fixtures:load -n
 
     deploy: |
         set -x -e
