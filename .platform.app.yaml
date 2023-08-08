@@ -37,6 +37,10 @@ web:
             expires: 1h
             passthru: "/index.php"
 
+            rules:
+                '^\/assets\/.*':
+                    expires: 365d
+
 
 
 mounts:
@@ -55,7 +59,7 @@ hooks:
         mv tailwindcss-linux-x64 bin/tailwindcss
         chmod +x bin/tailwindcss
         ./bin/tailwindcss -i assets/styles/app.css -o assets/styles/app.tailwind.css
-        
+
         php bin/console asset-map:compile
 
     deploy: |
