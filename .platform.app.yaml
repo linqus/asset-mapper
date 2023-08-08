@@ -62,6 +62,8 @@ hooks:
 
         php bin/console asset-map:compile
 
+        php bin/console doctrine:fixtures:load
+
     deploy: |
         set -x -e
 
