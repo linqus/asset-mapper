@@ -51,6 +51,8 @@ hooks:
         
         NODE_VERSION=18 symfony-build
 
+        php bin/console asset-map:compile
+
     deploy: |
         set -x -e
 
